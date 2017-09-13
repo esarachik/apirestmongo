@@ -8,7 +8,7 @@ var TaskSchema = new Schema({
     type: String,
     required: 'Kindly enter the name of the task'
   },
-  Created_date: {
+  created_date: {
     type: Date,
     default: Date.now
   },
@@ -21,4 +21,4 @@ var TaskSchema = new Schema({
   }
 });
 
-module.exports = mongoose.model('Tasks', TaskSchema);
+module.exports = mongoose.model('Task', TaskSchema);
