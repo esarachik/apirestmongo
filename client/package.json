@@ -1,0 +1,26 @@
+{
+  "name": "RegistroDeProducciones",
+  "version": "0.1.0",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "webpack --progress",
+    "build:prod": "cross-env APP_ENVIRONMENT=production webpack -p --progress",
+    "postinstall": "typings install",
+    "serve": "webpack-dev-server --inline --progress"
+  },
+  "dependencies": {
+    "@angular/common": "2.3.0",
+    "@angular/compiler": "2.3.0",
+    "@angular/core": "2.3.0",
+    "@angular/forms": "2.3.0",
+    "@angular/http": "2.3.0",
+    "@angular/platform-browser": "2.3.0",
+    "@angular/platform-browser-dynamic": "2.3.0",
+    "@angular/router": "3.3.0",
+    "core-js": "2.4.1",
+    "rxjs": "5.0.0-rc.4",
+    "zone.js": "0.7.2"
+  }
+ 
+}
