@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="jumbotron">
+        <app-food-form [foodItem]="(selectedItemState$ | async).selectedItem" 
+            (foodUpdated)="updateFood($event)" 
+            (foodAdded)="addFood($event)"></app-food-form>
+        <br/>
+        <app-foodlist [foods]="(foodState$ | async).foodItems" 
+            (foodSelected)="setCurrentlySelectedFood($event)" 
+            (foodDeleted)="deleteFood($event)"></app-foodlist>
+    </div>
+</div>
+<!-- /.container -->

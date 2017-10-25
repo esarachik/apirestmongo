@@ -1,0 +1,12 @@
+<p>
+  stock works!
+</p>
+<form (submit)="addItem()">
+  <input type="text" [(ngModel)]="name" [ngModelOptions]="{standalone: true}">
+</form>
+
+<ul>
+  <li *ngFor="let item of stock">
+      {{item.name}} <button (click)="deleteItem(item.name)">X</button>
+  </li>
+</ul>
